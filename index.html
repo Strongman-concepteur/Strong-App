@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portail d'inscription - La Patience</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Page d'authentification -->
+  <section id="authSection">
+    <h1>🔐 Accès sécurisé</h1>
+    <form id="authForm">
+      <input type="text" id="username" placeholder="Nom d'utilisateur" required />
+      <input type="password" id="password" placeholder="Mot de passe" required />
+      <button type="submit">Se connecter</button>
+    </form>
+  </section>
+
+  <!-- Portail principal -->
+  <section id="mainPortal" class="hidden">
+    <header>
+      <h1>COMPLEXE SCOLAIRE LA PATIENCE</h1>
+      <h2>Portail d'inscription</h2>
+    </header>
+    <nav>
+      <button onclick="showAbout()">À propos</button>
+      <button onclick="showHistory()">Historique</button>
+      <button onclick="showForm()">S'inscrire</button>
+      <button onclick="showStudents()">Liste des élèves</button>
+      <button onclick="logout()">Quitter</button>
+    </nav>
+    <div id="contentArea"></div>
+  </section>
+</body>
+<script src="script.js"></script>
+</html>
